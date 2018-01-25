@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "target": "es6",
+        "downlevelIteration": true,
+        "isolatedModules": false,
+        "lib": [
+            "es6"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "noEmitHelpers": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "types": [
+            "node",
+            "mocha"
+        ]
+    },
+    "exclude": [
+        "./node_modules"
+    ]
+}
