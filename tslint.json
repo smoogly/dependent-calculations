@@ -4,6 +4,14 @@
     "typeCheck": true
   },
   "rules": {
+    "align": [
+      true,
+      "elements",
+      "members",
+      "parameters",
+      "statements"
+    ],
+    "arrow-parens": false,
     "ban": [
       true,
       ["describe", "only"],
@@ -19,7 +27,7 @@
     "interface-name": false,
     "label-position": true,
     "max-classes-per-file": false,
-    "max-line-length": [true, 140],
+    "max-line-length": [true, 120],
     "member-access": true,
     "member-ordering": [
       true,
@@ -29,7 +37,7 @@
     ],
     "newline-before-return": false,
     "newline-per-chained-call": false,
-    "no-any": true,
+    "no-any": false,
     "no-arg": true,
     "no-bitwise": true,
     "no-console": [
@@ -46,10 +54,11 @@
     "no-duplicate-variable": true,
     "no-empty": true,
     "no-eval": true,
+    "no-implicit-dependencies": [true, "dev"],
     "no-inferrable-types": [true, "ignore-params"],
     "no-magic-numbers": true,
     "no-non-null-assertion": true,
-    "no-null-keyword": true,
+    "no-null-keyword": false,
     "no-parameter-properties": false,
     "no-parameter-reassignment": false,
     "no-require-imports": true,
@@ -59,6 +68,7 @@
     "no-trailing-whitespace": [true, "ignore-comments"],
     "no-unbound-method": true,
     "no-unnecessary-qualifier": true,
+    "no-unsafe-any": false,
     "no-unused-expression": true,
     "no-unused-variable": false,
     "no-use-before-declare": true,
@@ -85,9 +95,21 @@
     ],
     "radix": false,
     "semicolon": true,
-    "strict-boolean-expressions": [true, "allow-boolean-or-undefined"],
+    "strict-boolean-expressions": false,
     "strict-type-predicates": true,
     "switch-default": false,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        },
+        "esSpecCompliant": true
+      }
+    ],
     "triple-equals": true,
     "typedef": true,
     "typedef-whitespace": [true, {

@@ -1,11 +1,15 @@
 {
-  "name": "dependencies",
+  "name": "dependent-calculations",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.test.ts",
     "lint": "tslint -c tslint.json -p ./tsconfig.json ./src/**/*.ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "immutable": "^3.8.2",
+    "reselect": "^3.0.1"
+  },
   "devDependencies": {
     "@types/chai": "^4.1.2",
     "@types/mocha": "^2.2.47",
