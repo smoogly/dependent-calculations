@@ -4,7 +4,7 @@ import { ImmutableMap } from "./interface_helpers";
 
 export type Selector<Input, Output> = (input: Input) => Output;
 
-type Dependencies<Input, CalcInput extends { [prop: string]: any }> = {
+export type Dependencies<Input, CalcInput extends { [prop: string]: any }> = {
     [I in keyof CalcInput]: Selector<Input, CalcInput[I] | Promise<CalcInput[I]> | Calculator<Input, CalcInput[I]>>;
 };
 
